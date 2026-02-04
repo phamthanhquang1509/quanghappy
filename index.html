@@ -110,12 +110,6 @@
             <div class="skill-item">List nhạc tui hay nghe</div>
             <div class="skill-item">Tui cũng hay chơi game</div>
         </div>
-<button class="btn" onclick="openModal()">Xem ảnh full</button>
-
-<div id="imageModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:999; justify-content:center; align-items:center;">
-    <span onclick="closeModal()" style="position:absolute; top:20px; right:30px; color:white; font-size:40px; cursor:pointer;">&times;</span>
-    <img id="modalImage" src="anh.jpg" alt="Ảnh popup" style="max-width:90%; max-height:90%; border-radius:12px;">
-</div>
         <p style="text-align: center; margin: 50px 0 30px;">
             Muốn liên hệ hoặc xem thêm dự án của tui?
         </p>
@@ -141,10 +135,12 @@
 </div>
     </div>
 
-        <div style="text-align: center; margin: 50px 0;">
-            <button class="btn" onclick="showImage()">THÔNG ĐIỆP TRONG NGÀY</button>
-            <img id="hiddenImage" src="anh.jpg" alt="THÔNG ĐIỆP TRONG NGÀY" style="display: none; max-width: 100%; border-radius: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.6); margin-top: 20px;">
-        </div>
+        <button class="btn" onclick="openModal()">THÔNG ĐIỆP TRONG NGÀY</button>
+
+<div id="imageModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:999; justify-content:center; align-items:center;">
+    <span onclick="closeModal()" style="position:absolute; top:20px; right:30px; color:white; font-size:40px; cursor:pointer;">&times;</span>
+    <img id="modalImage" src="anh.jpg" alt="THÔNG ĐIỆP" style="max-width:90%; max-height:90%; border-radius:12px;">
+</div>
 
         <!-- Nếu bạn có ảnh đại diện hoặc ảnh minh họa -->
         <!-- <img src="duong-dan-anh-cua-ban.jpg" alt="Ảnh Wang đang code"> -->
@@ -162,3 +158,4 @@
     </script>
 </body>
 </html>
+
